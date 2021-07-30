@@ -64,8 +64,8 @@ body{
 }
 
 .logo{
-    width: 10rem;
-    height: 10rem;
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 .m-8{
@@ -137,4 +137,25 @@ body{
 
 .letter-spacing{
     letter-spacing: 1px;
+}
+
+.w-full{
+    width:100%;
+}
+
+/*gives access to 4 properties: top, bottom, left, right*/
+.relative{
+    position:relative;
+}
+
+.z-10{
+    z-index: 10;
+}
+
+.h-full{
+
+}
+
+.object-cover{
+    object-fit: cover;
 }
