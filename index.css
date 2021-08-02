@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -17,31 +18,41 @@ body{
     color:white;
 }
 
+/* tailwind provides this, so comment it
 .block{
-    /*take the entire parent container width*/
+    /*take the entire parent container width
     display: block;
 }
+*/
 
+/* tailwind provides this, so comment it
 .inline-block{
-    /*take the exact amount of space of the content inside it*/
-    /*allows margin top and bottom*/
+    /*take the exact amount of space of the content inside it
+    /*allows margin top and bottom
     display: inline-block;
 }
+*/
 
+/*
 .inline{
-    /*take the exact amount of space of the content inside it*/
-    /*doesn't allow margin top and bottom*/
+    /*take the exact amount of space of the content inside it
+    /*doesn't allow margin top and bottom
     display: inline;
 }
+*/
 
+/* tailwind provides this, so comment it
 .hidden{
     display: none;
 }
+*/
 
+/*
 .flex{
-    /*needs to be on the parent container to effect all children*/
+    /*needs to be on the parent container to effect all children
     display: flex;
 }
+*/
 
 .justify-between{
     justify-content:space-between;
@@ -93,11 +104,12 @@ body{
     padding-top: 18px;
     padding-bottom: 18px;
 }
-
+/*
 .px-12{
     padding-left: 12px;
     padding-right: 12px;
 }
+*/
 
 .font-cursive{
     font-family:cursive, sans-serif;
@@ -122,10 +134,11 @@ body{
 .rounded-full{
     border-radius: 9999px;
 }
-
+/* tailwind provides this, so comment it
 .font-bold{
     font-weight: bold;
 }
+*/
 
 .uppercase{
     text-transform: uppercase;
@@ -139,23 +152,89 @@ body{
     letter-spacing: 1px;
 }
 
+/* tailwind provides this, so comment it
 .w-full{
     width:100%;
 }
+*/
 
 /*gives access to 4 properties: top, bottom, left, right*/
 .relative{
     position:relative;
 }
 
+/*gives access to 4 properties: top, bottom, left, right*/
+.absolute{
+    position: absolute;
+}
+
+/*elements with position absolute are going to be placed
+relative to the parents with position relative/absolute
+*/
+
 .z-10{
     z-index: 10;
 }
 
-.h-full{
 
-}
 
 .object-cover{
     object-fit: cover;
 }
+
+.text-brand-teal{
+    color: #0c706a;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-16px{
+    font-size: 16px;
+}
+
+.text-36px{
+    font-size: 36px;
+}
+
+.h-450px{
+    height: 450px;
+}
+
+/*everything will take effect after window view is greater than 640px*/
+/*the .sm\: is just a naming convension, so we know when we surpassed the small screen view*/
+/*in the html just write sm:text-60px , the "\" is required here to escape ":" */
+/*sm screen size*/
+@media (min-width: 640px){
+    .sm\:text-60px{
+        font-size: 60px;
+    }
+
+    .sm\:text-20px{
+        font-size: 20px;
+    }
+}
+
+/*md screen size*/
+@media (min-width: 768px){
+    /*not provided by tailwind, so we do it*/
+    .md\:h-689px{
+        height: 689px;
+    }
+}
+
+/*TailwindCSS framework - group of css classes as these above that we wrote containing only one css property 
+Go on: https://tailwindcss.com/
+CTRL + F: write CDN
+Copy link element in your html file, not recommanded to use it like this, but for beginners it's fine!
+Other methods require installing the package!
+Breakpoints:  https://tailwindcss.com/docs/breakpoints
+Icons offered free: https://heroicons.com/
+*/
+
