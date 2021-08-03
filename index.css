@@ -8,6 +8,7 @@ body{
     /*make text look better*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-amoothing: grayscale;
+    background-color: #121826;
 }
 
 .bg-gray-900{
@@ -203,8 +204,8 @@ relative to the parents with position relative/absolute
     font-size: 36px;
 }
 
-.h-450px{
-    height: 450px;
+.h-500px{
+    height: 500px;
 }
 
 /*everything will take effect after window view is greater than 640px*/
